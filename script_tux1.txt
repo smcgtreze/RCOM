@@ -1,0 +1,142 @@
+    1  updateimage 
+    2  uname -a
+    3  vim /etc/apt/sources.list
+    4  apt update
+    5  apt upgrade
+    6  init 6
+    7  ifconfig
+    8  exit
+    9  whereis updateimage
+   10  vim /usr/bin/update
+   11  vim /usr/bin/updateimage 
+   12  exit
+   13  updateimage 
+   14  exit
+   15  apt update
+   16  apt upgrade
+   17  ini t6
+   18  init 6
+   19  ifconfig
+   20  tcpdump
+   21  apt install tcpdump
+   22  tcpdump host 172.16.1.1
+   23  exit
+   24  iptables -L
+   25  exit
+   26  vim /tmp/sali_cfg.2303
+   27  vim /tmp/sali_cfg.2209
+   28  ufw
+   29  iptables -L
+   30  iptables -F
+   31  vim /usr/bin/updateimage 
+   32  vim /usr/bin/updateimage 
+   33  sali_prepare 
+   34  vim /usr/bin/updateimage 192.168.1.1
+   35  sali_prepare 192.168.1.1
+   36  sali_prepare 172.16.1.1
+   37  sali_prepare penafiel
+   38  sali_prepare ns.netlab.fe.up.pt.
+   39  sali_prepare penafiel
+   40  sali_prepare 172.16.1.1
+   41  init 6
+   42  updateimage 
+   43  ifconfig
+   44  route
+   45  route -n
+   46  cd /usr/src/umip/
+   47  ls
+   48  cd extras/
+   49  ls
+   50  vim example-cn.conf 
+   51  vim example-ha.conf 
+   52  ipv4calc 
+   53  ip add
+   54  ip add add
+   55  exit
+   56  ifconfig -a
+   57  >exit
+   58  exit
+   59  fdisk -l
+   60  exit
+   61  apt update && apt upgrade -y
+   62  apt dist-upgrade
+   63  apt-get autoremove
+   64  /etc/apt/sources.list
+   65  gedit /etc/apt/sources.list
+   66  apt update && apt upgrade -y
+   67  apt dist-upgrade
+   68  cd /etc/apt/apt.conf.d/
+   69  ls
+   70  rm 50unattended-upgrades.ucf-dist 
+   71  reboot
+   72  nano /usr/local/etc/update.exclude
+   73  nano /usr/bin/updateimage 
+   74  cd /usr/bin/updateimage 
+   75  nano /usr/bin/updateimage 
+   76  nano /usr/bin/updateimage 
+   77  gedit /boot/grub/grub.cfg 
+   78  cat /etc/debian_version
+   79  apt autoremove
+   80  gedit /etc/grub.d/40_custom
+   81  grub-update
+   82  update-grub
+   83  gedit /etc/grub.d/40_custom
+   84  gedit /etc/default/grub
+   85  reboot
+   86  update-grub
+   87  gedit /etc/default/grub.d/xen.cfg
+   88  mv /etc/default/grub.d/xen.cfg /etc/default/grub.d/xen.old
+   89  update-grub
+   90  reboot
+   91  apt remove gimp
+   92  apt update && apt upgrade -y
+   93  gedit /etc/grub.d/40_custom
+   94  reboot
+   95  ping 172.16.2.254
+   96  ping google.com
+   97  ping 172.16.2.254
+   98  ping 172.16.2.254
+   99  ping google.com
+  100  ping https://www.google.com/search?q=despacito&ie=utf-8&oe=utf-8&client=firefox-b-ab
+  101  ping https://www.google.com/search?q=despacito
+  102  ping https://www.google.com/search?q=despacito&ie=utf-8&oe=utf-8&client=firefox-b-ab
+  103  ping google.com
+  104  ping youtube.com
+  105  ping https://www.google.com/search?q=despacito&ie=utf-8&oe=utf-8&client=firefox-b-ab[B
+  106  ping google.com
+  107  ping new-hostname-in-the-internet
+  108  ping new-hostname-in-the-Internet
+  109  ping 172.16.10.254
+  110  IFCONFIG
+  111  ifconfig
+  112  route -m
+  113  route -n
+  114  ping 172.16.11.1
+  115  ifconfig
+  116  ping 172.16.11.1
+  117  route -n
+  118  ifconfig
+  119  updateimage
+  120  ifconfig 
+  121  ifconfig 172.16.2.1\
+  122  ifconfig eth0 172.16.2.11/24
+  123  route add default gw 172.16.2.254
+  124  ping 1.1.1.1
+  125  updateimage 
+  126  ifconfig
+  127  ifconfig eth0 up
+  128  ifconfig eth0 172.16.10.1
+  129  conf t
+  130  route add -net 172.16.11.0/24 gw 172.16.10.254
+  131  route -n
+  132  route -n
+  133  route -n
+  134  ifconfig
+  135  ifconfig eth0 172.16.10.1/24
+  136  ifconfig
+  137  ping 172.16.11.1
+  138  ping 172.16.11.254
+  139  ping 172.16.11.253
+  140  ping 172.16.11.254
+  141  ifconfig
+  142  history > script_tux1.txt

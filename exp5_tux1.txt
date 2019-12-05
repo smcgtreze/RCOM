@@ -1,0 +1,281 @@
+    1  updateimage 
+    2  uname -a
+    3  vim /etc/apt/sources.list
+    4  apt update
+    5  apt upgrade
+    6  init 6
+    7  ifconfig
+    8  exit
+    9  whereis updateimage
+   10  vim /usr/bin/update
+   11  vim /usr/bin/updateimage 
+   12  exit
+   13  updateimage 
+   14  exit
+   15  apt update
+   16  apt upgrade
+   17  ini t6
+   18  init 6
+   19  ifconfig
+   20  tcpdump
+   21  apt install tcpdump
+   22  tcpdump host 172.16.1.1
+   23  exit
+   24  iptables -L
+   25  exit
+   26  vim /tmp/sali_cfg.2303
+   27  vim /tmp/sali_cfg.2209
+   28  ufw
+   29  iptables -L
+   30  iptables -F
+   31  vim /usr/bin/updateimage 
+   32  vim /usr/bin/updateimage 
+   33  sali_prepare 
+   34  vim /usr/bin/updateimage 192.168.1.1
+   35  sali_prepare 192.168.1.1
+   36  sali_prepare 172.16.1.1
+   37  sali_prepare penafiel
+   38  sali_prepare ns.netlab.fe.up.pt.
+   39  sali_prepare penafiel
+   40  sali_prepare 172.16.1.1
+   41  init 6
+   42  updateimage 
+   43  ifconfig
+   44  route
+   45  route -n
+   46  cd /usr/src/umip/
+   47  ls
+   48  cd extras/
+   49  ls
+   50  vim example-cn.conf 
+   51  vim example-ha.conf 
+   52  ipv4calc 
+   53  ip add
+   54  ip add add
+   55  exit
+   56  ifconfig -a
+   57  >exit
+   58  exit
+   59  fdisk -l
+   60  exit
+   61  apt update && apt upgrade -y
+   62  apt dist-upgrade
+   63  apt-get autoremove
+   64  /etc/apt/sources.list
+   65  gedit /etc/apt/sources.list
+   66  apt update && apt upgrade -y
+   67  apt dist-upgrade
+   68  cd /etc/apt/apt.conf.d/
+   69  ls
+   70  rm 50unattended-upgrades.ucf-dist 
+   71  reboot
+   72  nano /usr/local/etc/update.exclude
+   73  nano /usr/bin/updateimage 
+   74  cd /usr/bin/updateimage 
+   75  nano /usr/bin/updateimage 
+   76  nano /usr/bin/updateimage 
+   77  gedit /boot/grub/grub.cfg 
+   78  cat /etc/debian_version
+   79  apt autoremove
+   80  gedit /etc/grub.d/40_custom
+   81  grub-update
+   82  update-grub
+   83  gedit /etc/grub.d/40_custom
+   84  gedit /etc/default/grub
+   85  reboot
+   86  update-grub
+   87  gedit /etc/default/grub.d/xen.cfg
+   88  mv /etc/default/grub.d/xen.cfg /etc/default/grub.d/xen.old
+   89  update-grub
+   90  reboot
+   91  apt remove gimp
+   92  apt update && apt upgrade -y
+   93  gedit /etc/grub.d/40_custom
+   94  reboot
+   95  ping 172.16.2.254
+   96  ping google.com
+   97  ping 172.16.2.254
+   98  ping 172.16.2.254
+   99  ping google.com
+  100  ping https://www.google.com/search?q=despacito&ie=utf-8&oe=utf-8&client=firefox-b-ab
+  101  ping https://www.google.com/search?q=despacito
+  102  ping https://www.google.com/search?q=despacito&ie=utf-8&oe=utf-8&client=firefox-b-ab
+  103  ping google.com
+  104  ping youtube.com
+  105  ping https://www.google.com/search?q=despacito&ie=utf-8&oe=utf-8&client=firefox-b-ab[B
+  106  ping google.com
+  107  ping new-hostname-in-the-internet
+  108  ping new-hostname-in-the-Internet
+  109  ping 172.16.10.254
+  110  IFCONFIG
+  111  ifconfig
+  112  route -m
+  113  route -n
+  114  ping 172.16.11.1
+  115  ifconfig
+  116  ping 172.16.11.1
+  117  route -n
+  118  ifconfig
+  119  updateimage
+  120  ifconfig 
+  121  ifconfig 172.16.2.1\
+  122  ifconfig eth0 172.16.2.11/24
+  123  route add default gw 172.16.2.254
+  124  ping 1.1.1.1
+  125  updateimage 
+  126  ifconfig
+  127  ifconfig eth0 up
+  128  ifconfig eth0 172.16.10.1
+  129  conf t
+  130  route add -net 172.16.11.0/24 gw 172.16.10.254
+  131  route -n
+  132  route -n
+  133  route -n
+  134  ifconfig
+  135  ifconfig eth0 172.16.10.1/24
+  136  ifconfig
+  137  ping 172.16.11.1
+  138  ping 172.16.11.254
+  139  ping 172.16.11.253
+  140  ping 172.16.11.254
+  141  ifconfig
+  142  history > script_tux1.txt
+  143  vi /etc/resolv.conf
+  144  vi /etc/resolv.conf
+  145  nano vi /etc/resolv.conf
+  146  nan vi /etc/resolv.conf
+  147  vi /etc/resolv.conf
+  148  nano vi /etc/resolv.conf
+  149  ping fe.up.pt
+  150  ping netlab.fe.up.pt
+  151  ping lixa.netlab.fe.up.pt
+  152  ping 172.16.1.2
+  153  vi /etc/resolv.conf
+  154  clear
+  155  ping 172.16.1.2[A
+  156  vi /etc/resolv.conf
+  157  vi /etc/resolv.conf
+  158  vi /etc/resolv.conf
+  159  nano vi /etc/resolv.conf
+  160  route -n
+  161  ping 176.10.11.1
+  162  ping 176.12.11.1
+  163  ping 172.16.11.1
+  164  ping 172.16.11.1
+  165  route -n
+  166  route add -net 172.16.11.0/24 gw 172.16.10.254
+  167  route -n
+  168  ping 172.16.11.1
+  169  ping netlab.fe.up.pt
+  170  ping 172.16.1.254/24
+  171  ping 172.16.2.254/24
+  172  ping 172.16.2.254
+  173  ping 172.16.1.254
+  174  ping 172.16.0.254
+  175  ping 172.16.10.254
+  176  ping 172.16.11.253
+  177  ping 172.16.11.1
+  178  ping 172.16.11.254
+  179  ping 172.16.11.254
+  180  ping 172.16.1.2
+  181  ping 172.16.1.2
+  182  ping 172.16.1.19
+  183  ping 172.16.11.0
+  184  route -n
+  185  route add default gw 172.16.11.254
+  186  route add default gw 172.16.11.254
+  187  route add default gw 172.16.11.254
+  188  route add default gw 172.16.11.254
+  189  route add default gw 172.16.11.254
+  190  route add default gw 172.16.11.254
+  191  route add default gw 172.16.11.254
+  192  route add default gw 172.16.11.254
+  193  route add default gw 172.16.11.254
+  194  route add 172.16.2.19/24 gw 172.16.11.
+  195  route add 172.16.2.254/24 gw 172.16.11.254
+  196  route add 172.16.2.19 gw 172.16.11.254
+  197  route add 172.16.2.0 gw 172.16.11.254
+  198  route add 172.16.2.0/24 gw 172.16.11.254
+  199  route add 172.16.2.0/24 gw 172.16.11.254
+  200  man route add 
+  201  ping 172.16.2.254
+  202  ping 172.16.1.254
+  203  ping 1.1.1.1
+  204  ping 1.1.1.1
+  205  ping 172.16.11.254
+  206  route -n
+  207  route add default gw 172.16.11.254
+  208  ping 172.16.11.254
+  209  ping 1.1.1.1
+  210  clear
+  211  ls
+  212  cd ../
+  213  ls
+  214  cd etc
+  215  ls
+  216  open resolv.conf 
+  217  nano resolv.conf
+  218* ping 
+  219  cat resolv.conf
+  220  cat etc/resolv.conf
+  221  nano resolv.conf
+  222  cat resolv.conf
+  223  ls
+  224  cat vi
+  225  cat /etc/resolv.conf
+  226  ping netlab.fe.up.pt
+  227  ping lixa.netlab.fe.up.pt
+  228  ping 172.16.1.2
+  229  root -n
+  230  route -n
+  231  ping 8.8.8.8
+  232  cat /etc/resolv.conf
+  233  cat /etc/resolv.conf
+  234  ping 8.8.8.8
+  235* route add default gw 172.16.10
+  236  ping 172.16.10.254
+  237  route -n
+  238  ping 172.16.1.19
+  239  ping 172.16.1.19/24
+  240  ping 172.16.1.254
+  241  ping 172.16.11.254
+  242  ping 172.16.11.1
+  243  ping 172.16.11.1
+  244  ping 172.16.11.1
+  245  ping 172.16.11.254
+  246  ping 172.16.1.19
+  247  ping 172.16.11.254
+  248  ping 172.16.11.254
+  249  ping 172.16.11.254
+  250  route -n
+  251  add route 172.16.2.0
+  252  add route 172.16.2.0 gw 172.16.11.254
+  253  add route 172.16.2.0/24 gw 172.16.11.254
+  254  route add 172.16.2.0/24 gw 172.16.11.254
+  255  route add 172.16.2.0 gw 172.16.11.254
+  256  route add -net 172.16.2.0 gw 172.16.11.254
+  257  route add 172.16.2.0 -gw 172.16.11.254
+  258  route add 172.16.2.0 gw 172.16.11.254
+  259  route add 172.16.2.0 gw 172.16.11.254
+  260  route add 172.16.2.0 gw 172.16.11.254
+  261  route add 172.16.2.0 gw 172.16.11.254
+  262  route add 172.16.2.0 gw 172.16.11.254
+  263  route add 172.16.2.0 gw 172.16.11.254
+  264  route add 172.16.2.0 gw 172.16.11.254
+  265  route add 172.16.2.0 gw 172.16.11.254
+  266  route add 172.16.2.0 gw 172.16.11.254
+  267  route add 172.16.2.0 gw 172.16.11.254
+  268  route add 172.16.2.0 gw 172.16.11.254
+  269  route add 172.16.2.0 gw 172.16.11.254
+  270  route add 172.16.2.0 gw 172.16.10.254
+  271  route -n
+  272  ping 172.16.11.254
+  273  ping 8.8.8.8
+  274  ping 8.8.8.8.
+  275  ping 8.8.8.8
+  276  ping 172.16.2.0
+  277  ping 172.16.2.0/24
+  278  ping 172.16.2.0
+  279  history > exp5_tux4
+  280  ls
+  281  history > exp5_tux1.txt
