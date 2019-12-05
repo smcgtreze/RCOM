@@ -1,0 +1,203 @@
+    1  updateimage 
+    2  uname -a
+    3  vim /etc/apt/sources.list
+    4  apt update
+    5  apt upgrade
+    6  init 6
+    7  ifconfig
+    8  exit
+    9  whereis updateimage
+   10  vim /usr/bin/update
+   11  vim /usr/bin/updateimage 
+   12  exit
+   13  updateimage 
+   14  exit
+   15  apt update
+   16  apt upgrade
+   17  ini t6
+   18  init 6
+   19  ifconfig
+   20  tcpdump
+   21  apt install tcpdump
+   22  tcpdump host 172.16.1.1
+   23  exit
+   24  iptables -L
+   25  exit
+   26  vim /tmp/sali_cfg.2303
+   27  vim /tmp/sali_cfg.2209
+   28  ufw
+   29  iptables -L
+   30  iptables -F
+   31  vim /usr/bin/updateimage 
+   32  vim /usr/bin/updateimage 
+   33  sali_prepare 
+   34  vim /usr/bin/updateimage 192.168.1.1
+   35  sali_prepare 192.168.1.1
+   36  sali_prepare 172.16.1.1
+   37  sali_prepare penafiel
+   38  sali_prepare ns.netlab.fe.up.pt.
+   39  sali_prepare penafiel
+   40  sali_prepare 172.16.1.1
+   41  init 6
+   42  updateimage 
+   43  ifconfig
+   44  route
+   45  route -n
+   46  cd /usr/src/umip/
+   47  ls
+   48  cd extras/
+   49  ls
+   50  vim example-cn.conf 
+   51  vim example-ha.conf 
+   52  ipv4calc 
+   53  ip add
+   54  ip add add
+   55  exit
+   56  ifconfig -a
+   57  >exit
+   58  exit
+   59  fdisk -l
+   60  exit
+   61  apt update && apt upgrade -y
+   62  apt dist-upgrade
+   63  apt-get autoremove
+   64  /etc/apt/sources.list
+   65  gedit /etc/apt/sources.list
+   66  apt update && apt upgrade -y
+   67  apt dist-upgrade
+   68  cd /etc/apt/apt.conf.d/
+   69  ls
+   70  rm 50unattended-upgrades.ucf-dist 
+   71  reboot
+   72  nano /usr/local/etc/update.exclude
+   73  nano /usr/bin/updateimage 
+   74  cd /usr/bin/updateimage 
+   75  nano /usr/bin/updateimage 
+   76  nano /usr/bin/updateimage 
+   77  gedit /boot/grub/grub.cfg 
+   78  cat /etc/debian_version
+   79  apt autoremove
+   80  gedit /etc/grub.d/40_custom
+   81  grub-update
+   82  update-grub
+   83  gedit /etc/grub.d/40_custom
+   84  gedit /etc/default/grub
+   85  reboot
+   86  update-grub
+   87  gedit /etc/default/grub.d/xen.cfg
+   88  mv /etc/default/grub.d/xen.cfg /etc/default/grub.d/xen.old
+   89  update-grub
+   90  reboot
+   91  apt remove gimp
+   92  apt update && apt upgrade -y
+   93  gedit /etc/grub.d/40_custom
+   94  reboot
+   95  ifconfig eth0 172.16.11.1/24
+   96  ifconfig
+   97  route -n
+   98  route add -net 172.16.10.0/24 gw 172.16.11.253
+   99  route -n
+  100  ping 172.16.10.1
+  101  /etc/init.d/networking restart
+  102  ifconfig eth0 down
+  103  ifconfig eth0 up
+  104  ifconfig eth0 172.16.11.1/24
+  105  route add -net 172.16.10.0/24
+  106  route add -net 172.16.10.0/24 gw 172.16.11.253
+  107  route add default gw 172.16.11.254
+  108  ifconfig
+  109  ifconfig eth0 172.16.11.1/24
+  110  route add -net 172.16.10.0/24 gw 172.16.11.253
+  111  route -n
+  112  ifconfig
+  113  route -n
+  114  route del -net 172.16.2.0/24
+  115  route -n
+  116  ping 172.16.10.1
+  117  echo 0 > /proc/sys/net/ipv4/conf/eth0/accept_redirects
+  118  echo 0 > /proc/sys/net/ipv4/conf/all/accept_redirects 
+  119  route -n
+  120  route del -net 172.16.10.0/24
+  121  route -n
+  122  ifconfig
+  123  ping 172.16.10.1
+  124  traceroute 172.16.10.1
+  125  route add -net 172.16.10.0/24 gw 172.16.11.253
+  126  traceroute 172.16.10.1
+  127  echo 1 > /proc/sys/net/ipv4/conf/eth0/accept_redirects
+  128  echo 1 > /proc/sys/net/ipv4/conf/all/accept_redirects
+  129  traceroute 172.16.10.1
+  130  route del -net 172.16.10.0/24
+  131  traceroute 172.16.10.1
+  132  ping 172.16.10.1
+  133  route -n
+  134  ifconfig
+  135  ifconfig
+  136  route -n
+  137  ifconfig
+  138  updateimage
+  139  ifconfig
+  140  ifconfig eth1 172.16.11.1
+  141  ifconfig
+  142  ifconfig
+  143  ping 172.16.10.253
+  144  ping 172.16.11.253
+  145  ping 172.16.11.1
+  146* ifconfig 
+  147  route add -net 172.16.10.0/24 gw 172.16.11.253
+  148  ping 172.16.11.1
+  149* ping 172.16.11.253
+  150  ping 172.16.10.1
+  151  ifconfig
+  152  ifconfig
+  153  route del da default gateway
+  154  route -n
+  155  ifconfig
+  156  route -n
+  157  ifconfig
+  158  ifconfig eth1 172.16.11.1/24
+  159  ifconfig
+  160  route -n
+  161  ping 172.16.11.1
+  162  ping 172.16.11.253
+  163  ping 172.16.11.254
+  164  ping 172.16.10.1
+  165  ping 172.16.11.253
+  166  ping 172.16.11.253
+  167  ping 172.16.10.254
+  168  ping 172.16.10.1
+  169  ping 172.16.11.1
+  170  ping 172.16.11.253
+  171  ping 172.16.10.254
+  172  ping 172.16.11.254
+  173  ifconfig
+  174  route -n
+  175  route add -net 172.16.10.0/24 gw 172.16.11.253
+  176  route -n
+  177  ping 172.16.11.254
+  178  ping 172.16.11.254
+  179  ifconfig 
+  180  route -i
+  181  route -n
+  182  ping 172.16.11.254
+  183  ping 172.16.2.254
+  184  ping 172.16.2.19
+  185  ping 172.16.2.19
+  186  route -n
+  187  route del -net 172.16.2.0/24
+  188  route -n
+  189  route del default gw 172.16.2.254
+  190  route -n
+  191  ping 172.16.2.254
+  192  route add default gw 172.16.11.254
+  193  ping 172.16.2.254
+  194  ping 1.1.1.
+  195  ping 1.1.1.1
+  196  ping fe.up.pt
+  197  route -n
+  198  ping 1.1.1.1
+  199  ping 172.16.2.254
+  200  ping 172.16.1.254
+  201  ifconfig
+  202  history
+  203  history > script_tux2.txt
