@@ -10,30 +10,67 @@
 #include <string.h>
 #include <strings.h>
 
-
-
 //struct hostent* gethostbyname (const char* name);
 
 #define SERVER_PORT 21
 //#define SERVER_ADDR "192.168.28.96"
-#define SERVER_ADDR "193.137.29.15"
+#define SERVER_ADDR "193.137.29.15" // endereço do host name ftp.up.pt
 #define MAX_STRING_LENGTH 50
 #define h_addr h_addr_list[0]
 
-//ftp://abrilsuperinteressante.files.wordpress.com/2018/07/52d0469d865be2752d0003a9emperor-cold_hg.jpeg?quality=70&strip=info
 
  void AddressVerifier(char *address){
      char protocol[7];
+	 memset(protocol,0,7);
+
      strcpy(protocol,address);
-	 printf("%s\n",protocol);
+	 //printf("%s\n",protocol);
+
+	 //verifica se o protocolo é o correto
      if(strcmp(protocol,"ftp://") != 0){
          printf("Not valid protocol\n");
      }
-     if(strlen(protocol) != 6){
-         printf("Not a valid protocol\n");
-     }
+ 
  }
 
+int Receive(int sockfd, char expected[]){
+	char received;
+	int estado = 0, totalRead = 0;
+	while(estado != 3){
+	switch(estado){
+		case 0:
+			totalRead = read(sockfd,&c,1);
+			if(totalRead > 0 && c == expected[0]){
+				estado=1;
+			}
+			else{
+				estado=0;
+			}
+			break;
+		case 1:
+			totalRead = read(sockfd,&c,1);
+			if(totalRead > 0 && c == expected[1]){
+				estado=2;
+			}
+			else{
+				estado=0;
+			}
+			break;
+		case 2:
+			totalRead = read(sockfd,&c,1);
+			if(totalRead > 0 && c == expected[2]){
+				estado=3;
+			}
+			else{
+				estado=0;
+			}
+			break;
+	}
+	}
+	return 1;
+}
+
+/*
 int receiveMessage(char *message,int sockfd){
      //char buffer[MAX_STRING_LENGTH];
      //char thrash[MAX_STRING_LENGTH];
@@ -46,7 +83,8 @@ int receiveMessage(char *message,int sockfd){
      //}
 	 char c,buf[10];
 	 memset(buf,0,10);
-	 int totalRead; 
+	 int totalRead;
+
 	 for(int i=0;i < 3;i++){
      	totalRead = read(sockfd,&c,1);
 	 	printf("Lido da socket\n");
@@ -76,7 +114,7 @@ int receiveMessage(char *message,int sockfd){
 	}
 
     return totalRead;
-}
+}*/
 
 int main(int argc, char** argv){
 
@@ -97,12 +135,14 @@ int main(int argc, char** argv){
         exit(1);
     }*/
 
+		printf("Escreve o host name desejado(ex: ftp.up.pt)\n");
 
 	    if (argc != 2) {  
 		    fprintf(stderr,"usage: getip address\n");
 		    exit(1);
 	     }
 
+		// a struct h contém o host
 		if ((h=gethostbyname(argv[1])) == NULL) {  
 		    herror("gethostbyname");
 		    exit(1);
@@ -112,7 +152,7 @@ int main(int argc, char** argv){
     printf("IP Address : %s\n",inet_ntoa(*((struct in_addr *)h->h_addr)));
 
 
-	strcpy(User,"anonymous");
+	strcpy(User,"anonymous"); 
 	strcpy(Pass,"none");
 	strcpy(Host,SERVER_ADDR);
 	strcpy(Path,"ftp://abrilsuperinteressante.files.wordpress.com/2018/07/");
@@ -135,10 +175,30 @@ int main(int argc, char** argv){
          printf("Erro num dos parâmetros\n");
     }
 
+	// a função conect now retorna o filedescriptor da socket a que nos conectamos
     sockfd = connectnow();
 	printf("Conectado Com sucesso\n");
-	response(sockfd,User,Filename,"331");
-	response(sockfd,User,Filename,"331");
+	response(sockfd,"user",User,Filename,"331");
+	//tlv n seja necesário
+	printf("Passwork required for euproprio\n");
+	response(sockfd,"pass",Pass,Filename,"230");
+	printf("User logged in\n");
+	response(sockfd,null,"pasv",Filename,"227");
+	printf("Entering Passive Mode\n");
+
+	//Comentar isto "193.137.29.15" Vai ser preciso mudar a porta 
+	/*Receive(sockfd,"193");
+	Receive(sockfd,"137");
+	Receive(sockfd,"29");
+	Receive(sockfd,"15");
+	//
+	int porta;
+	char rcv[2];
+	//ler da porta sem verificar
+	porta = rcv[0]*256 + rcv[1];
+	//abrir outra ligação para a outra socket sacar o file
+	*/
+	
 
 	close(sockfd);
 	exit(0);
@@ -170,29 +230,38 @@ int main(int argc, char** argv){
         	perror("connect()");
 		    exit(0);
 	}
-    printf("Conection Estabilished\n");
-    char *message;
+    //char *message;
 
-    int state = receiveMessage(message,sockfd);
+    //int state = receiveMessage(message,sockfd);
 	//printf("message:%s",message);
+	int state = Receive(sockfd,220);
     if(state <= 0){
         printf("Erro na leitura\n");
     }
+	printf("Conection Estabilished\n");
 	return sockfd;
 	
  }
 
-int response(int socketfd, char user[],char filename[],char response[]){
+int response(int socketfd,char type[], char user[],char filename[],char response[]){
 	int i=0;	
-	char buffer[50];
-	memset(buffer,0,50);
+	char tosend[50];
+	memset(tosend,0,50);
 	char buf[50];
-	memset(buffer,0,50);
-	strcat(buffer,"user ");
-	strcat(buffer,user);
-	strcat(buffer,"\n");
-	int totalRead = write(socketfd,buffer,strlen(buffer));
-	printf("Username enviado :%s\n",buffer);
+	memset(buf,0,50);
+
+	strcat(tosend,type);//tipo de informação a enviar
+	strcat(tosend,user);// a propria informação
+	strcat(tosend,"\n");// o enter a colocar no terminal
+
+	int totalRead = write(socketfd,tosend,strlen(tosend));
+	printf("%s enviado :%s\n",type,tosend);
+
+	// ver se a resposta está certa
+	Receive(socketfd,response);
+	printf("%s correto\n",type,tosend);
+
+	//esta linha de código imprime tudo o que o servidor retorna quando entras
 	/*while(read(socketfd,buf,1) != 0){
 		printf("%s",buf);
 		++i;
