@@ -177,7 +177,9 @@ int main(int argc, char** argv){
 
 	// a função conect now retorna o filedescriptor da socket a que nos conectamos
     sockfd = connectnow();
+	printf("\033[1;34m");
 	printf("Conectado Com sucesso\n");
+	printf("\033[0m;");
 	response(sockfd,"user",User,Filename,"331");
 	//tlv n seja necesário
 	printf("Passwork required for euproprio\n");
