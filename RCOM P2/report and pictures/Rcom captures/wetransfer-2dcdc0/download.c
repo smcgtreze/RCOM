@@ -416,17 +416,23 @@ int main(int argc, char** argv){
     printf("Ficheiro :%s\n",meleon);
 
 
-    //int fd = fopen(meleon, O_RDWR|O_CREAT);
-    FILE *fd = fopen(meleon,"wb+");
-    //printf("Erro a abrir o ficheiro\n");
-    //printf("Fd:%d\n",fd);
+    int fd = open(meleon, O_RDWR|O_CREAT);
+    if(fd <0 ){
+        printf("Erro a abrir o ficheiro\n");
+    }
+    printf("Fd:%d\n",fd);
     char mander;
     char izard[512];
     int i=0;
     while(read(sockfdClient,&mander,1) > 0){
+		if(i == 5){
+				//printf("Sleeping\n");
+				sleep(10);
+		}
+		//printf("i value:%d,",i);
+		++i;
         izard[i]=mander;
-        //write(fd,&izard[i],1);
-        fwrite(&izard[i],1,1,fd);
+        write(fd,&izard[i],1);
     }
 
     printf("Boas festas!\n");
